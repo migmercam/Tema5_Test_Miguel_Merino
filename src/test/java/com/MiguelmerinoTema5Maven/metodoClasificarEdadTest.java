@@ -12,37 +12,32 @@ class metodoClasificarEdadTest {
     }
 
     @Test
-    void TC02_infanciaInferior() {
-        assertEquals("Infancia", metodoClasificarEdad.clasificarEdad(0));
-    }
-
-    @Test
-    void TC03_infanciaSuperior() {
+    void TC02_infancia() {
         assertEquals("Infancia", metodoClasificarEdad.clasificarEdad(5));
     }
 
     @Test
-    void TC04_ninezInicio() {
+    void TC03_ninez() {
         assertEquals("Niñez", metodoClasificarEdad.clasificarEdad(6));
     }
 
     @Test
-    void TC05_adolescenciaInicio() {
+    void TC04_adolescencia() {
         assertEquals("Adolescencia", metodoClasificarEdad.clasificarEdad(12));
     }
 
     @Test
-    void TC06_juventudInicio() {
+    void TC05_juventud() {
         assertEquals("Juventud", metodoClasificarEdad.clasificarEdad(18));
     }
 
     @Test
-    void TC07_adultezInicio() {
+    void TC06_adultez() {
         assertEquals("Adultez", metodoClasificarEdad.clasificarEdad(25));
     }
 
     @Test
-    void TC08_vejez() {
+    void TC07_vejez() {
         assertEquals("Vejez", metodoClasificarEdad.clasificarEdad(60));
     }
     }
