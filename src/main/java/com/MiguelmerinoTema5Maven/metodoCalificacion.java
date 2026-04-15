@@ -2,7 +2,7 @@ package com.MiguelmerinoTema5Maven;
 
 public class metodoCalificacion {
 
-// Copiamos el metodo
+//metodo
     public static String calificacion(int nota) {
         if (nota < 0 || nota > 10) {
             throw new IllegalArgumentException("Nota no válida");

@@ -1,7 +1,6 @@
 package com.MiguelmerinoTema5Maven;
 
-import java.util.Scanner;
-
+//metodo
 public class metodoContarPositivos {
 
     public static int contarPositivos(int[] datos) {
