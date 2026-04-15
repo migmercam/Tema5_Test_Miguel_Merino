@@ -1,23 +1,49 @@
 package com.MiguelmerinoTema5Maven;
 
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class metodoClasificarEdadTest {
-    public static String clasificarEdad(int edad) {
-        if (edad < 0) {
-            throw new IllegalArgumentException("Edad no válida");
-        } if (edad < 6) {
-            return "Infancia";
-        } else if (edad < 12) {
-            return "Niñez";
-        } else if (edad < 18) { return "Adolescencia";
-        } else if (edad < 25) {
-            return "Juventud";
-        } else if (edad < 60) {
-            return "Adultez";
-        } else {
-            return "Vejez";
-        }
+    @Test
+    void TC01_edadNegativa() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            metodoClasificarEdad.clasificarEdad(-1);
+        });
     }
 
-}
+    @Test
+    void TC02_infanciaInferior() {
+        assertEquals("Infancia", metodoClasificarEdad.clasificarEdad(0));
+    }
+
+    @Test
+    void TC03_infanciaSuperior() {
+        assertEquals("Infancia", metodoClasificarEdad.clasificarEdad(5));
+    }
+
+    @Test
+    void TC04_ninezInicio() {
+        assertEquals("Niñez", metodoClasificarEdad.clasificarEdad(6));
+    }
+
+    @Test
+    void TC05_adolescenciaInicio() {
+        assertEquals("Adolescencia", metodoClasificarEdad.clasificarEdad(12));
+    }
+
+    @Test
+    void TC06_juventudInicio() {
+        assertEquals("Juventud", metodoClasificarEdad.clasificarEdad(18));
+    }
+
+    @Test
+    void TC07_adultezInicio() {
+        assertEquals("Adultez", metodoClasificarEdad.clasificarEdad(25));
+    }
+
+    @Test
+    void TC08_vejez() {
+        assertEquals("Vejez", metodoClasificarEdad.clasificarEdad(60));
+    }
+    }
+
