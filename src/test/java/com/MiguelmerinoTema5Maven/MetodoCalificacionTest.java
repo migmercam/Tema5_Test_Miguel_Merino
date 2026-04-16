@@ -5,44 +5,44 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-    class metodoCalificacionTest {
+    class MetodoCalificacionTest {
 
         @Test
         void TC01_notaInvalidaBaja() {
             assertThrows(IllegalArgumentException.class, () -> {
-                metodoCalificacion.calificacion(-1);
+                MetodoCalificacion.calificacion(-1);
             });
         }
 
         @Test
         void TC02_notaInvalidaAlta() {
             assertThrows(IllegalArgumentException.class, () -> {
-                metodoCalificacion.calificacion(11);
+                MetodoCalificacion.calificacion(11);
             });
         }
 
         @Test
         void TC03_suspenso() {
-            assertEquals("SUSPENSO", metodoCalificacion.calificacion(3));
+            assertEquals("SUSPENSO", MetodoCalificacion.calificacion(3));
         }
 
         @Test
         void TC04_suficiente() {
-            assertEquals("SUFICIENTE", metodoCalificacion.calificacion(5));
+            assertEquals("SUFICIENTE", MetodoCalificacion.calificacion(5));
         }
 
         @Test
         void TC05_bien() {
-            assertEquals("BIEN", metodoCalificacion.calificacion(6));
+            assertEquals("BIEN", MetodoCalificacion.calificacion(6));
         }
 
         @Test
         void TC06_notable() {
-            assertEquals("NOTABLE", metodoCalificacion.calificacion(7));
+            assertEquals("NOTABLE", MetodoCalificacion.calificacion(7));
         }
 
         @Test
         void TC07_sobresaliente() {
-            assertEquals("SOBRESALIENTE", metodoCalificacion.calificacion(9));
+            assertEquals("SOBRESALIENTE", MetodoCalificacion.calificacion(9));
         }
     }

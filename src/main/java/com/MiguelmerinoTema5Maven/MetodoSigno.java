@@ -1,8 +1,7 @@
 package com.MiguelmerinoTema5Maven;
 import java.util.Scanner;
-import java.awt.*;
 
-public class metodoSigno {
+public class MetodoSigno {
 public static void main(String[]args){
     int prueba;
     Scanner lector=new Scanner(System.in);

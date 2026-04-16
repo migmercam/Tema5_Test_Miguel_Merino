@@ -1,6 +1,6 @@
 package com.MiguelmerinoTema5Maven;
 
-public class metodoEsBisiesto {
+public class MetodoEsBisiesto {
 
 
 

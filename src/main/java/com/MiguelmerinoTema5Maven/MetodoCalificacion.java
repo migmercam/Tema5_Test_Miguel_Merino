@@ -1,6 +1,6 @@
 package com.MiguelmerinoTema5Maven;
 
-public class metodoCalificacion {
+public class MetodoCalificacion {
 
 //metodo
     public static String calificacion(int nota) {

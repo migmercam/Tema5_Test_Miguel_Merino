@@ -1,6 +1,6 @@
 package com.MiguelmerinoTema5Maven;
 
-public class metodoPedraPapelTijera {
+public class MetodoPedraPapelTijera {
 
     public static String jugar(String jugador1, String jugador2) {
 

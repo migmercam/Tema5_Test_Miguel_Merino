@@ -1,7 +1,7 @@
 package com.MiguelmerinoTema5Maven;
 
 //metodo
-public class metodoContarPositivos {
+public class MetodoContarPositivos {
 
     public static int contarPositivos(int[] datos) {
         int contador = 0;

@@ -2,7 +2,7 @@ package com.MiguelmerinoTema5Maven;
 
 import java.util.Scanner;
 
-public class metodoClasificarEdad {
+public class MetodoClasificarEdad {
 
     public static void main(String[]args){
         int edad;
