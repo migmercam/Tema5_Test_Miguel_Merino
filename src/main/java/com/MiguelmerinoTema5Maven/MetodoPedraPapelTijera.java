@@ -24,7 +24,7 @@ public class MetodoPedraPapelTijera {
         // Si no, gana jugador2
         return "JUGADOR2";
     }
-
+//C on este metodo hacemos que solo se marquen como validas las opciones de piedra papel o tijera, para no poner platano y k funcione
     private static boolean esValida(String jugada) {
         return jugada.equals("PIEDRA") ||
                 jugada.equals("PAPEL") ||
